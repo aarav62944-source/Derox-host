@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DEROX HOST | Premium Game Hosting</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #080d19;
+    color: white;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 8%;
+    background: #0d1424;
+    border-bottom: 1px solid #202b40;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+    color: #55aaff;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 22px;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: #55aaff;
+}
+
+.hero {
+    text-align: center;
+    padding: 110px 20px;
+    background: radial-gradient(circle at top, #173b70, #080d19 65%);
+}
+
+.badge {
+    display: inline-block;
+    padding: 9px 17px;
+    border: 1px solid #398aff;
+    border-radius: 30px;
+    color: #75baff;
+    margin-bottom: 25px;
+}
+
+.hero h1 {
+    font-size: 55px;
+    margin-bottom: 20px;
+}
+
+.hero h1 span {
+    color: #55aaff;
+}
+
+.hero p {
+    color: #aab8ce;
+    font-size: 17px;
+    line-height: 1.7;
+    max-width: 600px;
+    margin: auto;
+}
+
+.buttons {
+    margin-top: 35px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 14px 27px;
+    margin: 7px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    background: #2788ff;
+    color: white;
+    border: 1px solid #2788ff;
+}
+
+.btn.secondary {
+    background: transparent;
+    border-color: #465875;
+}
+
+.btn:hover {
+    opacity: .8;
+}
+
+section {
+    padding: 75px 8%;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.subtitle {
+    text-align: center;
+    color: #9aa9c0;
+    margin-bottom: 40px;
+}
+
+.features, .plans {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    gap: 22px;
+}
+
+.card {
+    background: #101a2c;
+    border: 1px solid #263852;
+    padding: 28px;
+    border-radius: 13px;
+    transition: .3s;
+}
+
+.card:hover {
+    border-color: #398aff;
+    transform: translateY(-5px);
+}
+
+.card h3 {
+    color: #65b3ff;
+    margin-bottom: 14px;
+}
+
+.card p {
+    color: #aab8ce;
+    line-height: 1.7;
+}
+
+.plan-price {
+    font-size: 28px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.plan-price small {
+    font-size: 13px;
+    color: #aab8ce;
+}
+
+.card ul {
+    list-style: none;
+    margin: 20px 0;
+    color: #b7c5d8;
+    line-height: 2.2;
+}
+
+.card ul li::before {
+    content: "✓ ";
+    color: #55aaff;
+}
+
+.center {
+    text-align: center;
+}
+
+.cta {
+    text-align: center;
+    background: #101a2c;
+    border: 1px solid #263852;
+    border-radius: 15px;
+    padding: 55px 20px;
+}
+
+footer {
+    background: #050914;
+    padding: 35px 8%;
+    text-align: center;
+    color: #8292aa;
+    line-height: 2;
+}
+
+@media(max-width: 650px) {
+    header {
+        padding: 18px 5%;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    nav {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    nav a {
+        margin: 0;
+    }
+
+    .hero {
+        padding: 85px 18px;
+    }
+
+    .hero h1 {
+        font-size: 37px;
+    }
+
+    section {
+        padding: 55px 5%;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">DEROX HOST</div>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#features">Features</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#login">Login</a>
+    </nav>
+</header>
+
+<div class="hero" id="home">
+
+    <div class="badge">Premium Game Hosting</div>
+
+    <h1>POWER YOUR <span>GAME</span></h1>
+
+    <p>
+        Experience powerful Minecraft hosting with
+        high performance, reliable infrastructure
+        and easy server management.
+    </p>
+
+    <div class="buttons">
+        <a href="#pricing" class="btn">Get Started</a>
+        <a href="#features" class="btn secondary">Explore Features</a>
+    </div>
+
+</div>
+
+<section id="features">
+
+    <h2 class="section-title">Why Choose Derox Host?</h2>
+
+    <p class="subtitle">
+        Everything you need for your gaming server.
+    </p>
+
+    <div class="features">
+
+        <div class="card">
+            <h3>⚡ High Performance</h3>
+            <p>Powerful server infrastructure for smooth gameplay.</p>
+        </div>
+
+        <div class="card">
+            <h3>🛡️ DDoS Protection</h3>
+            <p>Protection-focused infrastructure for your servers.</p>
+        </div>
+
+        <div class="card">
+            <h3>💾 NVMe Storage</h3>
+            <p>Fast storage for better loading performance.</p>
+        </div>
+
+        <div class="card">
+            <h3>🎮 Easy Management</h3>
+            <p>Manage your Minecraft servers from one control panel.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<section id="pricing">
+
+    <h2 class="section-title">Our Hosting Plans</h2>
+
+    <p class="subtitle">
+        Choose the right plan for your Minecraft server.
+    </p>
+
+    <div class="plans">
+
+        <div class="card">
+            <h3>Starter Plan</h3>
+            <div class="plan-price">Coming Soon</div>
+            <ul>
+                <li>Basic Server Resources</li>
+                <li>NVMe Storage</li>
+                <li>Server Management</li>
+            </ul>
+            <a href="#login" class="btn">Get Started</a>
+        </div>
+
+        <div class="card">
+            <h3>Pro Plan</h3>
+            <div class="plan-price">Coming Soon</div>
+            <ul>
+                <li>More Server Resources</li>
+                <li>NVMe Storage</li>
+                <li>Priority Support</li>
+            </ul>
+            <a href="#login" class="btn">Get Started</a>
+        </div>
+
+        <div class="card">
+            <h3>Premium Plan</h3>
+            <div class="plan-price">Coming Soon</div>
+            <ul>
+                <li>Premium Resources</li>
+                <li>Advanced Management</li>
+                <li>Priority Support</li>
+            </ul>
+            <a href="#login" class="btn">Get Started</a>
+        </div>
+
+    </div>
+
+</section>
+
+<section id="login">
+
+    <div class="cta">
+        <h2>Ready to Start Your Server?</h2>
+
+        <p style="color:#aab8ce; margin:18px 0;">
+            Your gaming journey starts with Derox Host.
+        </p>
+
+        <a href="mailto:support@deroxhost.com" class="btn">
+            Contact Us
+        </a>
+    </div>
+
+</section>
+
+<footer>
+
+    <h2 style="color:#55aaff;">DEROX HOST</h2>
+
+    <p>Premium Game Hosting Experience</p>
+
+    <p>© 2026 DEROX HOST. All Rights Reserved.</p>
+
+</footer>
+
+</body>
+          </html>
